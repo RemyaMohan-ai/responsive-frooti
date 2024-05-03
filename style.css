@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 1rem;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+.writedown p{
+    font-size: 1.5rem;
+    
+    
+    
+  }
+  .left-section{
+    display: flex;
+   justify-content :center;
+    align-items:center ; 
+    min-height: 100vh ;
+    background-color: rgba(252, 119, 4, 0.926);
+    position: relative;
+  }
+  .life-img{
+   
+    display: flex;
+   justify-content :center;
+    align-items:center ;
+     transform: rotate(110deg);
+  }
+  .life-img img{
+     max-width: 100%;
+     width: 50%;
+    
+  }
+  .life-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+  .life-text h1{
+   font-size: 4rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    
+  }
+  .connect i{
+    font-size: 1.5rem;
+    padding-right: .5rem;
+    
+  }
+  .right-section{
+    padding: 4rem;
+  }
+  .footer a{
+    color: black;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: .5px;
+   text-decoration: none;
+    
+  }
+  .third i{
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+  .banner {
+    display: flex;
+    width: 100%;
+
+  }
+  .banner img{
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+
+
+ 
+
+
+  .navbar-nav > li > .dropdown-menu { 
+    background-color:rgba(246, 45, 45, 0.926); 
+  }
+  .navbar-nav > li > .down{ 
+    width: auto; 
+  }
+
+
+  .navbar-nav > li > .dropdown-menu :hover{
+    color: black !important;
+    background: none;
+  }
+  
+
+  .navbar-nav .nav-link:hover {
+    color: red !important;
+  }
+  @keyframes clockwise{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes anticlockwise{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(-360deg);
+    }
+  }
+  .rotating-clockwise{
+    animation: clockwise 2s linear forwards;
+  }
+  .rotating-anticlockwise{
+    animation: anticlockwise 5s linear forwards;
+  }
+
+
+ @media (max-width:1000px){
+  .life-img img{
+    width: 40%;
+  }
+ }
+ @media (max-width:400px){
+  .life-img img{
+    width: 30%;
+  }
+  
+ }
+ @media (max-width:989px){
+  .dropdown-menu{
+    width: 100% !important;
+  }
+  
+ }
